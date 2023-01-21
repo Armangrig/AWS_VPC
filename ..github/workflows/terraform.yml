@@ -25,5 +25,7 @@ jobs:
     - name: Terraform plan
       run: terraform plan -out=tfplan
 
-    - name: Terraform apply
-      run: terraform apply -auto-approve tfplan
+    - name: Terraform apply and sleep
+      run: |
+        terraform apply -auto-approve tfplan
+        sleep 200
