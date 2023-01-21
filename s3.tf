@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "tf_state" {
-  bucket = "my-terraform-state"
+  bucket = "lennakanhay"
   acl    = "private"
 }
 
 terraform {
   backend "s3" {
-    bucket = "my-terraform-state"
+    bucket = "lennakanhay"
     key    = "state.tfstate"
     region = "us-east-1"
   }
