@@ -23,7 +23,7 @@ terraform {
       version = "~> 4.0"
     }
   }
-}
+
 
 resource "aws_instance" "app_server" {
   ami           = "ami-0b5eea76982371e91"
