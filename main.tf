@@ -41,18 +41,18 @@ resource "aws_network_interface" "example" {
   private_ips = ["10.0.0.10"]
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-0c94855ba95c71c99"
-  instance_type = "t2.micro"
-  network_interface {
-    network_interface_id = aws_network_interface.example.id
-    device_index         = 0
-  }
-  
-  tags = {
-    Name = var.instance_name
-  }
-}
+#resource "aws_instance" "example" {
+#  ami           = "ami-0c94855ba95c71c99"
+#  instance_type = "t2.micro"
+#  network_interface {
+#    network_interface_id = aws_network_interface.example.id
+#    device_index         = 0
+#  }
+#  
+#  tags = {
+#    Name = var.instance_name
+#  }
+#}
   
 #}
 resource "aws_security_group" "example" {
@@ -76,6 +76,19 @@ resource "aws_security_group" "example" {
 }
 
 
+
+resource "aws_instance" "example" {
+  ami           = "ami-0c94855ba95c71c99"
+  instance_type = "t2.micro"
+  network_interface {
+    network_interface_id = aws_network_interface.example.id
+    device_index         = 0
+  }
+  
+  tags = {
+    Name = var.instance_name
+  }
+}
 
 #resource "aws_instance" "app_server" {
 #  ami           = "ami-0b5eea76982371e91"
