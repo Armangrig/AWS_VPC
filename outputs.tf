@@ -1,5 +1,5 @@
-data "http" "website" {
-  url = "http://${aws_instance.web.public_ip}"
+#data "http" "website" {
+#  url = "http://${aws_instance.web.public_ip}"
 }
 
 output "curl_response" {
