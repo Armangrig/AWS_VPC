@@ -48,6 +48,12 @@ resource "aws_instance" "example" {
     network_interface_id = aws_network_interface.example.id
     device_index         = 0
   }
+  
+  tags = {
+    Name = var.instance_name
+  }
+}
+  
 }
 resource "aws_security_group" "example" {
   name        = "example"
@@ -71,11 +77,11 @@ resource "aws_security_group" "example" {
 
 
 
-resource "aws_instance" "app_server" {
-  ami           = "ami-0b5eea76982371e91"
-  instance_type = "t2.micro"
+#resource "aws_instance" "app_server" {
+#  ami           = "ami-0b5eea76982371e91"
+#  instance_type = "t2.micro"
 
-  tags = {
-    Name = var.instance_name
-  }
-}
+#  tags = {
+#    Name = var.instance_name
+#  }
+#}
