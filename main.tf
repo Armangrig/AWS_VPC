@@ -90,6 +90,16 @@ resource "aws_instance" "example" {
   }
 }
 
+output "instance_id" {
+  description = "ID of the EC2 instance"
+  value       = aws_instance.app_server.id
+}
+
+output "instance_public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.app_server.public_ip
+}
+
 #resource "aws_instance" "app_server" {
 #  ami           = "ami-0b5eea76982371e91"
 #  instance_type = "t2.micro"
