@@ -40,10 +40,10 @@ resource "aws_network_interface" "example" {
   subnet_id = aws_subnet.example.id
   private_ips = ["10.0.0.10"]
   
-  attachment {
-    instance = aws_instance.app_server.id
-    device_index = 1
-  }
+#  attachment {
+#    instance = aws_instance.app_server.id
+#    device_index = 1
+#  }
 }
 
 #resource "aws_instance" "example" {
