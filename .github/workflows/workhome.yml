@@ -34,4 +34,4 @@ jobs:
       run: |
         terraform apply -auto-approve tfplan
         sleep 200
-        terraform destroy
+        terraform destroy -auto-approve tfplan
