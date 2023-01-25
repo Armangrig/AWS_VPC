@@ -86,7 +86,8 @@ resource "aws_instance" "example" {
   }
   
   tags = {
-    Name = var.instance_name
+    Name = gugush
+#    Name = var.instance_name
   }
 }
 
