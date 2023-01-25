@@ -32,8 +32,8 @@ resource "aws_vpc" "example" {
 
 resource "aws_subnet" "example" {
   vpc_id            = aws_vpc.example.id
-  cidr_block        = "10.0.1.0/24"
-  availability_zone = "us-east-1"
+  cidr_block        = "10.0.0.0/24"
+  availability_zone = "us-east-1a"
 }
 
 resource "aws_network_interface" "example" {
