@@ -16,11 +16,4 @@ output "instance_public_ip" {
   value       = aws_instance.app_server.public_ip
 }
 
-#variable 
-output "instance_name" {
-  description = "Value of the Name tag for the EC2 instance"
-  type        = string
-  default     = "gugushik"
-}
-
 
