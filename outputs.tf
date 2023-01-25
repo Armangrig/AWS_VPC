@@ -1,10 +1,10 @@
-#data "http" "website" {
-#  url = "http://${aws_instance.web.public_ip}"
-#}
-
-output "curl_response" {
-  value = data.http.website.body
+data "http" "website" {
+  url = "http://${aws_instance.web.public_ip}"
 }
+
+#output "curl_response" {
+#  value = data.http.website.body
+#}
 
 #output "instance_id" {
 #  description = "ID of the EC2 instance"
