@@ -54,7 +54,7 @@ resource "aws_instance" "example" {
   }
 }
   
-}
+#}
 resource "aws_security_group" "example" {
   name        = "example"
   description = "Example security group"
