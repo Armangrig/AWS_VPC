@@ -33,5 +33,5 @@ jobs:
     - name: Terraform apply and sleep
       run: |
         terraform apply -auto-approve tfplan
-        sleep 200
+        sleep 60
         terraform destroy -auto-approve tfplan
