@@ -7,7 +7,7 @@ cat <<EOF > /var/www/html/index.html
 <html>
 <h2>Build by Power of Terraform <font color="red">/font></h2><br>
 Owner Grigoryan
-Hello from arman
+Hello from Arman
 </html>
 EOF
 
