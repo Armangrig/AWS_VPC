@@ -1,9 +1,9 @@
-terraform {
-  cloud {
-    organization = "armangrig"
+#terraform {
+#  cloud {
+#    organization = "armangrig"
 
-    workspaces {
-      name = "s3_to_cloud"
-    }
-  }
-}
+#    workspaces {
+#      name = "s3_to_cloud"
+#    }
+#  }
+#}
